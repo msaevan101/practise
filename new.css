@@ -1,0 +1,174 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+        {
+            background-image: url(background2.jpg);
+            font-family:"Roboto", sans-serif;
+            height: 100vh;
+            background-size: cover;
+            position: center;
+       }
+
+       .main-nav
+    {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+.main-nav li
+    {
+     display: inline-block;
+    }
+
+.main-nav li a
+{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border:1px solid white ;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size:15px;
+}
+
+.main-nav li.active a
+{
+border: 1px solid white;
+}
+
+.main-nav ul li a:hover
+ {
+    border: 1px solid white;
+ }
+
+ .earth
+{
+    left: 50%;
+    top: -40%;
+    transform: translateX(120%);
+    position: absolute;
+    z-index: 2;
+
+}
+.earth img
+{
+    height: 300px;
+    width: 300px;
+    animation: earth 10s linear infinite;
+}
+
+@keyframes earth
+{
+    100%
+    {
+    transform: rotate(360deg);
+    }
+}
+
+ .logo img
+{
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+.body
+{
+    font-family: monospace;
+}
+
+.row
+{
+max-width: 1200px;
+margin: auto;
+}
+
+
+.hero
+ {
+     position: absolute;
+    font-family: Roboto, "Times New Roman", sans-serif;
+     width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+ }
+
+ h1 
+ {
+color: white;
+text-transform: uppercase;
+font-size: 70px;
+text-align: center;
+margin-top: 275px;
+}
+
+.button
+{
+margin-top: 30px;
+margin-left: 440px;
+}
+
+ .btn
+ {
+     text-decoration: none;
+     border-radius: 20px;
+     width: 100%;
+     border: 1px solid white;
+     color: white;
+     padding: 10px 30px;
+     font-size: 13px;
+     margin: 12px 0;
+     margin-right: 5px;
+     text-transform: uppercase;
+ }
+ 
+ .btn-one
+ {
+font-family: "Roboto", sans-serif;
+ } 
+
+ .btn-two
+ {
+font-family: "Roboto", sans-serif;
+ }
+
+.btn-one:hover
+{
+    background-color:transparent;
+    transition: 0.5s ease-out;
+}
+
+.btn-two:hover
+{
+    background-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+ #div1
+ {
+     height: 200px;
+     background-color: darkorange;
+ }
+ #div2
+ {
+     height: 200px;
+     background-color: white;
+     width: 80%;
+     margin:auto;
+     z-index: 1;
+     position: relative;
+    margin-top: -20px;
+    margin-bottom: -20px;
+ }
+
+ #div3
+ {
+     height: 200px;
+     background-color: darkorange;
+     z-index: 2;
+     position: relative;
+ }
